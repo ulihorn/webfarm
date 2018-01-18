@@ -10,4 +10,4 @@ RUN yum -y update
 
 RUN yum install -y which sudo httpd php openssh-server
 
-RUN echo "# add the service that we want to start\n/sbin/service httpd start\n/sbin/service sshd start"
+RUN echo "# add the service that we want to start\n/sbin/service httpd start\n/sbin/service sshd start" >> ~/.bashrc
